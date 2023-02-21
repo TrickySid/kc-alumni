@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KCCEMSR Alumni Registration</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <div class="bg"></div> -->
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>KCCEMSR Alumni Registration</h1>
+        <p>
+          Register for Alumnia Portal
+        </p>
+        <br />
+        <div class="btn-group">
+          <p class="btn-label">Already a member?</p>
+          <a class="btn-item" href="https://xtfmr5.csb.app">Login</a>
+        </div>
+      </div>
+      <form action="https://xtfmr5.csb.app">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i>
+          <h2>Enter Details</h2>
+        </div>
+        <label for="cars">Join as:</label>
+        <select required>
+          <option value="">None</option>
+          <option value="1">Alumni</option>
+          <option value="2">
+            Student
+          </option>
+          <option value="3">
+            Faculty / Staff
+          </option>
+        </select>
+        <div class="info">
+          <input
+            class="fname"
+            type="text"
+            name="name"
+            placeholder="Name*"
+            required
+          />
+          <!-- <div class="box radio">
+            <label for="gender" class="fl fontLabel"> Gender: &nbsp;</label>
+            <input type="radio" name="Gender" value="Male" required /> Male
+            &nbsp;
+            <input type="radio" name="Gender" value="Female" required /> Female
+          </div> -->
+          <input type="email" name="name" placeholder="Email*" required />
+          <input type="text" name="name" placeholder="Phone number*" required />
+          <input type="password" name="name" placeholder="Password*" required />
+          <label for="cars">Passout Year:</label>
+          <select id="ddlYears" required></select>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Currently working in*"
+            required
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Post Graduation (if any)"
+          />
+          <label for="cars">Select Branch:</label>
+          <select required>
+            <option value="">None</option>
+            <option value="1">Computer Science</option>
+            <option value="2">
+              Information Technology
+            </option>
+            <option value="3">
+              Electronics & Telecommunication
+            </option>
+            <option value="4">MMS</option>
+          </select>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+    <script type="text/javascript">
+      window.onload = function () {
+        //Reference the DropDownList.
+        var ddlYears = document.getElementById("ddlYears");
+
+        //Determine the Current Year.
+        var currentYear = new Date().getFullYear();
+
+        //Loop and add the Year values to DropDownList.
+        for (var i = 2001; i <= currentYear; i++) {
+          var option = document.createElement("OPTION");
+          option.innerHTML = i;
+          option.value = i;
+          ddlYears.appendChild(option);
+        }
+      };
+    </script>
+  </body>
+</html>
