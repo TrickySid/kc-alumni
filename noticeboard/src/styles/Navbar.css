@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+p {
+  margin: 0;
+}
+
+.clip-contents {
+  overflow: hidden;
+}
+
+.flex-col-hstart-vstart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-row-vcenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  position: fixed;
+  background-color: rgba(20, 20, 20, 1);
+  margin: -10px -10px;
+  width: 100.7%;
+  height: 70px;
+  z-index: 1;
+}
+
+.nav-content {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.user-info {
+  text-align: left;
+  margin-right: 450px;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.clg-logo {
+  background-color: rgba(217, 217, 217, 1);
+  width: 70px;
+  border-radius: 50px;
+  margin-right: 10px;
+  height: 100%;
+}
+
+.cu-name {
+  height: fit-content;
+}
+
+.clg-name {
+  font-size: 15px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  word-wrap: break-word;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+
+.user-name {
+  font-size: 10px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  word-wrap: break-word;
+  opacity: 0.8;
+}
+
+.nav-options {
+  box-sizing: border-box;
+}
+
+.nav-item {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  font-size: 15px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  word-wrap: break-word;
+  opacity: 0.8;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.nav-item-active {
+  padding: 25px 5px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  background-color: rgba(37, 37, 37, 1);
+  width: 140px;
+  height: 100%;
+}
+
+.nav-item-active .nav-item {
+  margin-right: 0;
+}
+
+.nav-divider {
+  border: 0.5px solid rgba(138, 138, 138, 1);
+  transform: rotate(-90deg);
+  width: 20px;
+  height: 0.5px;
+  opacity: 50%;
+}

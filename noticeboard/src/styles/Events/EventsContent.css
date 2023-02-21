@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+p {
+  margin: 0;
+}
+
+.main {
+  margin-top: 20px;
+  margin-left: 35px;
+  width: 100%;
+  height: fit-content;
+}
+
+.events-header {
+  font-size: 23px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  word-wrap: break-word;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.add-event {
+  display: inline;
+  width: 25px;
+  height: 25px;
+  text-align: end;
+  margin-top: 56px;
+  margin-left: 180px;
+  cursor: pointer;
+}
