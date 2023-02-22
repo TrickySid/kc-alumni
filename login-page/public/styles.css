@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg {
+  background-image: url("https://kccemsr.edu.in/public/images/tqhabUK3oZsqoOMci216UPKzmwdmzO5eafeace4401d.jpg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 40%;
+}
